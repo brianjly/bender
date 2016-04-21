@@ -1,0 +1,239 @@
+// Variables
+
+$background: white
+$shadow: #ACBECA
+$base: #617687
+
+$border: solid 2px black
+
+.lineprops
+  width: 2px
+  height: 100%
+  background-color: black
+  position: absolute
+
+.stripeprops
+  height: 2px
+  width: 100%
+  background-color: black
+  position: absolute
+
+// Head
+
+body
+  background: radial-gradient(ellipse   closest-side, #78FEFF 1%, white, #00B9F9, #05425E,#00B9F9, #05425E, #00B9F9, #05425E, #00B9F9 130%)
+
+#palette
+
+  position: relative
+  width: 600px
+  height: 600px
+  margin: 0 auto
+
+#head
+  background-color: $shadow
+  height: 450px
+  width: 280px
+  position: absolute
+  border-top-left-radius: 340px
+  border-top-right-radius: 340px
+  bottom: 0
+  left: 29%
+  border: $border
+
+
+#shadow
+  background-color: $base
+  height: 450px
+  width: 251px
+  position: absolute
+  border-top-left-radius: 230px
+  border-top-right-radius: 205px
+  bottom: 0
+  left: 5%
+
+// Mouth
+
+#mouth
+  height: 78px
+  width: 240px
+  background-color: white
+
+  border-top-left-radius: 25px
+  border-top-right-radius: 25px
+  border-bottom-left-radius: 25%
+  border-bottom-right-radius: 25%
+  border: $border
+
+  position: absolute
+  bottom: 25px
+  left: 18px
+  z-index: 1
+
+
+#line1
+  @extend .lineprops
+  left: 40px
+
+#line2
+  @extend .lineprops
+  left: 80px
+
+#line3
+  @extend .lineprops
+  left: 120px
+
+#line4
+  @extend .lineprops
+  left: 160px
+
+#line5
+  @extend .lineprops
+  left: 200px
+
+#stripe1
+  @extend .stripeprops
+  top: 26px
+
+#stripe2
+  @extend .stripeprops
+  top: 52px
+
+// Eyes
+
+#eyesection
+  width: 380px
+  height: 130px
+  background-color: $shadow
+  position: absolute
+  bottom: 140px
+  left: 125px
+  border-radius: 100px
+  overflow: hidden
+  border: $border
+
+#eyeshadow
+  width: 255px
+  height: 255px
+  background-color: $base
+  transform: rotate(45deg)
+
+  position: absolute
+  left: 62px
+  top: -60px
+
+#eyeblacks
+  background-color: black
+  width: 360px
+  height: 110px
+  border-radius: 100px
+  top: 10px
+  left: 10px
+  position: absolute
+  overflow: hidden
+
+#lefteye
+  width: 120px
+  height: 120px
+  border-radius: 120px
+  background-color: white
+  position: absolute
+  left: 50px
+  top: -5px
+  box-shadow: 0px -6px 10px 3px rgba(0,0,0,0.6) inset
+
+#righteye
+  width: 120px
+  height: 120px
+  border-radius: 120px
+  background-color: white
+  position: absolute
+  right: 50px
+  top: -5px
+  box-shadow: 0px -6px 10px 3px rgba(0,0,0,0.6) inset
+
+
+#pupil
+  width: 30px
+  height: 30px
+  background-color: black
+  position: absolute
+  top: 48px
+  left: 43px
+
+#angryleft
+  height: 120px
+  width: 20px
+  background-color: black
+  position: absolute
+  right: -15px
+  top: -28px
+  transform: rotate(125deg)
+
+#angryright
+  height: 120px
+  width: 20px
+  background-color: black
+  position: absolute
+  left: 30px
+  top: -58px
+  transform: rotate(235deg)
+
+// Antenna
+
+#antennabase
+  height: 30px
+  width: 60px
+  background-color: $shadow
+  border-radius: 45%
+  position: absolute
+  top: 135px
+  left: 285px
+  overflow: hidden
+  border: $border
+
+
+
+#antennabaseshadow
+  height: 30px
+  width: 37px
+  background-color: $base
+  border-radius: 38%
+  position: absolute
+
+  left: 13px
+  bottom: 2px
+
+#antenna
+  width: 0
+  height: 0
+  border-left: 15px solid transparent
+  border-right: 15px solid transparent
+  border-bottom: 100px solid $shadow
+
+  position: absolute
+  top: 39px
+  left: 300px
+  z-index: -1
+
+#antennashadow
+  width: 0
+  height: 0
+  border-left: 8px solid transparent
+  border-right: 8px solid transparent
+  border-bottom: 90px solid $base
+
+  position: absolute
+  top: 10px
+  left: -7px
+
+#antennaball
+  width: 17px
+  height: 17px
+  border-radius: 100%
+  background-color: $base
+
+  position: absolute
+  left: 304px
+  top: 33px
+  border: $border
